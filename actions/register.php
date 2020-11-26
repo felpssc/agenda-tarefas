@@ -34,8 +34,6 @@
         }
     }
 
-    // echo $usuario;
-
    
 
     

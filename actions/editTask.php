@@ -42,7 +42,7 @@
   <body>
     <div class="side-bar">
       <div class="box-profile">
-        <img src="../images/perfil.svg" id="perfil" />
+        <img src="<?= $_SESSION['usuarioPerfil'] ?>" id="perfil" />
         <p><?= ucfirst($_SESSION['usuarioNome']) ?></p>
       </div>
       <div class="buttons">
