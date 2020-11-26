@@ -1,0 +1,74 @@
+.side-bar a {
+    text-decoration: none;
+}
+.side-bar {
+    position: fixed;
+    width: 18vw;
+    height: 100vh;
+    background-color: #9075CE;
+    /* border-right: 1px solid #a7a7a7; */
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+#perfil {
+    width: 100px;
+    height: 100px;
+    margin: auto auto;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid white;
+    animation-name: popup;
+    animation-duration: 500ms;
+}
+
+.side-bar .box-profile p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2ECC71;
+    width: 17vw;
+    height: 8vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+    margin: 5rem auto 0 auto;
+}
+
+.side-bar button:nth-child(1) {
+    margin-top: .5rem;
+}
+
+button:hover {
+    border: 2px solid white;
+}
+
+#ver-icon {
+    width: 25px;
+    margin-right: 7px;
+}
+
+#back-icon {
+    width: 20px;
+    margin-right: 7px;
+}

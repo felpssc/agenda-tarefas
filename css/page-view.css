@@ -1,0 +1,182 @@
+.tarefas-block {
+    position: absolute;
+    right: 7rem;
+    top: 10rem;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 60vw;
+}
+
+/* table {
+    display: table;
+    text-align: center;
+} */
+
+button {
+    color: white !important;
+    font-weight: 800 !important;
+    margin: .3rem auto !important;
+    font-size: 1rem;
+}
+
+.icons {
+    margin: 0 1rem 0 1rem;
+}
+
+#trash-icon {
+    width: 26px;
+    cursor: pointer;
+}
+
+#trash-icon:hover {
+    padding: 2px;
+    background-color: rgba(245, 28, 28, 0.3);
+    border-radius: 3px;
+}
+
+#edit-icon {
+    width: 26px;
+    cursor: pointer;
+}
+
+#edit-icon:hover {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]::before {
+    border: 2px solid #ccc !important;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+
+    .side-bar {
+        position: initial !important; 
+        width: 100vw !important;
+        height: 30vh !important;
+        display: flex !important;
+        flex-direction: collumn !important;
+        align-items: center !important;
+        justify-content: center !important;
+        /* margin-top: -160px !important; */
+        border-radius: 0 0 1rem 1rem !important;
+    }
+
+    .buttons {
+        display: flex !important; 
+        flex-direction: row !important;
+    }
+
+    .side-bar button {
+        width: 10rem;
+        /* margin-top: 11rem !important; */
+        margin-right: .3rem !important;
+    }
+
+    .side-bar p {
+        margin-bottom: 0 !important;
+        /* display: block !important; */
+    }
+
+
+    .side-bar button:nth-child(8){
+        margin-top: 0 !important;
+    }
+
+    .create-tarefa {
+        position: initial !important;
+        margin: 0 !important;
+        width: 70vw !important;
+        height: 80vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 1rem auto !important;
+    }
+
+    h2 {
+        position: initial !important;
+    }
+
+    .create-tarefa form {
+
+        width: 80vw;
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+
+    hr {
+        opacity: 0 !important;
+        width: 90vw;
+        /* margin-left: -.8rem !important */
+    }
+
+    h2 {
+        position: initial !important;
+        margin-top: 7rem !important;
+    }
+
+    .create-tarefa input:nth-child(2){
+        width: 75vw;
+    }
+
+    #time-input, #data-input {
+        position: initial !important;
+        margin-right: 0 !important;
+        width: 75vw;
+        margin-top: 0 !important;
+    }
+
+    label:nth-child(5) {
+        margin-top: 0 !important;
+    }
+
+    #salvar-tarefa {
+        width: 95% !important;
+        margin: auto !important;
+    }
+
+    span {
+        width: auto !important;
+        margin: -3rem auto 2rem auto !important;
+    }
+
+    span img {
+        margin-left: 0 !important;
+    }
+
+    .box-profile #perfil {
+        width: 70px !important;
+        height: 70px !important;
+        margin-top: 2rem !important;
+    }
+
+
+    .tarefas-block {
+        position: initial !important;
+        width: 90vw;
+        margin: 5rem auto 0 auto !important;
+        height: auto;
+        overflow: auto;
+    }
+
+    .tarefas-block table tr {
+        width: 5rem !important;
+        /* backgound-color: white !important; */
+    }
+}
+
+
+
+
+
+

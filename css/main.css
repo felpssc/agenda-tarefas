@@ -1,0 +1,12 @@
+
+* { /* Zerar margens e padding de todos elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #9C78EE;
+    font-family: 'Roboto', sans-serif;
+}

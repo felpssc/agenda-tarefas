@@ -1,0 +1,245 @@
+h2 {
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 35rem;
+    top: 8rem;
+    font-weight: 600;
+}
+
+.create-tarefa {
+    position: relative;
+    margin: auto;
+    top: 10rem;
+    left: 12rem;
+    width: 36rem;
+    height: 16rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem 2rem 2rem 2rem;
+    color: #9C98A6;
+    font-size: 1.3rem;
+    border: 2.5px solid #c0c0c9;
+}
+
+.create-tarefa label + input {
+    margin-top: 0.4rem;
+}
+
+.create-tarefa input:nth-child(2) {
+    width: 90%;
+    padding-left: 1rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: 2.5px solid #E6E6F0;
+    outline: none;
+    color: #737374;
+    font-weight: 700;
+}
+
+#data-input, #time-input {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: 2.5px solid #E6E6F0;
+    border-radius: 15px;
+    outline: none;
+    color: #737374;
+    font-weight: 700;
+    color: rgb(70, 70, 70);
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+}
+
+#data-input {
+    position: relative;
+    top: 2rem;
+    right: 3.5rem;
+    width: 8rem;
+}
+
+hr {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    width: 39.9rem;
+    background-color: #E6E6F0;
+    height: 1.5px;
+    margin-left: -2rem;
+}
+
+label:nth-child(4) {
+    outline: none;
+}
+
+label:nth-child(5) {
+    margin-left: 5rem;
+    outline: none;
+}
+
+span img {
+    margin: 0;
+    width: 30px;
+    position: relative;
+    top: .6rem;
+    margin-left: 2rem;
+}
+
+span {
+    font-size: 1rem;
+    margin-right: 5rem;
+}
+
+#salvar-tarefa {
+    width: 14rem;
+    height: 2.6rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #2ECC71;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#salvar-tarefa:hover {
+    background-color: #2EBA6A;
+}
+
+
+.create-tarefa input:focus {
+    color: rgb(70, 70, 70);
+}
+
+.create-tarefa input:valid {
+    border: 2.5px solid #72f3ac;
+}
+
+#time-input:valid {
+    border: 2.5px solid #72f3ac;
+}
+
+#data-input:valid {
+    border: 2.5px solid #72f3ac;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+
+    .side-bar {
+        position: initial !important; 
+        width: 100vw !important;
+        height: 30vh !important;
+        display: flex !important;
+        flex-direction: collumn !important;
+        align-items: center !important;
+        justify-content: center !important;
+        /* margin-top: -160px !important; */
+        border-radius: 0 0 1rem 1rem !important;
+    }
+
+    .buttons {
+        display: flex !important; 
+        flex-direction: row !important;
+    }
+
+    .side-bar button {
+        width: 9rem;
+        /* margin-top: 11rem !important; */
+        margin-right: .3rem !important;
+    }
+
+    .side-bar p {
+        margin-bottom: 0 !important;
+        /* display: block !important; */
+    }
+
+
+    .side-bar button:nth-child(8){
+        margin-top: 0 !important;
+    }
+
+    .create-tarefa {
+        position: initial !important;
+        margin: 0 !important;
+        width: 70vw !important;
+        height: 80vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 1rem auto !important;
+    }
+
+    h2 {
+        position: initial !important;
+    }
+
+    .create-tarefa form {
+
+        width: 80vw;
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+
+    hr {
+        opacity: 0 !important;
+        width: 90vw;
+        /* margin-left: -.8rem !important */
+    }
+
+    h2 {
+        position: initial !important;
+        margin-top: 7rem !important;
+    }
+
+    .create-tarefa input:nth-child(2){
+        width: 75vw;
+    }
+
+    #time-input, #data-input {
+        position: initial !important;
+        margin-right: 0 !important;
+        width: 75vw;
+        margin-top: 0 !important;
+    }
+
+    label {
+        margin-top: 2rem !important;
+        margin-left: 0 !important;
+    }
+
+    label:nth-child(5) {
+        margin-top: 0 !important;
+    }
+
+    #salvar-tarefa {
+        width: 95% !important;
+        margin: auto !important;
+    }
+
+    span {
+        width: auto !important;
+        margin: -3rem auto 2rem auto !important;
+    }
+
+    span img {
+        margin-left: 0 !important;
+    }
+
+    .box-profile #perfil {
+        width: 70px !important;
+        height: 70px !important;
+        margin-top: 2rem !important;
+    }
+}

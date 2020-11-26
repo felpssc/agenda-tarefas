@@ -1,0 +1,123 @@
+
+.container-profile {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.box-profile {
+    width: 300px;
+    height: 200px;
+    background: rgba(144, 117, 206, 1);
+    border-radius: 6px;
+    display: block;
+    animation-name: show;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#perfil {
+    width: 100px;
+    height: 100px;
+    margin: auto auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid white;
+    animation-name: popup;
+    animation-duration: 500ms;
+}
+
+.menu button img {
+    margin-left: 5px;
+    margin: auto 5px;
+}
+
+.menu {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 56vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2ECC71;
+    width: 18vw;
+    height: 8vh;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;  
+}
+
+button:hover{
+    border: 2px solid white;
+}
+
+#criar {
+    width: 25px;
+    margin-right: 7px;
+}
+
+#ver {
+    width: 25px;
+    margin-right: 7px;
+}
+
+#sair {
+    width: 25px;
+    margin-right: 7px;
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .menu button {
+        width: 15rem;
+    }
+
+    .box {
+        margin-top: -2rem;
+    }
+
+    h2 {
+        margin-top: -3rem;
+    }
+    
+}
