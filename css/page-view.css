@@ -8,15 +8,14 @@
     width: 60vw;
 }
 
-/* table {
-    display: table;
-    text-align: center;
-} */
+.side-bar #perfil {
+    margin-top: 11rem !important;
+}
 
 button {
     color: white !important;
     font-weight: 800 !important;
-    margin: .3rem auto !important;
+    margin: .6rem auto !important;
     font-size: 1rem;
 }
 
@@ -65,7 +64,6 @@ input[type="checkbox"]::before {
         flex-direction: collumn !important;
         align-items: center !important;
         justify-content: center !important;
-        /* margin-top: -160px !important; */
         border-radius: 0 0 1rem 1rem !important;
     }
 
@@ -76,13 +74,11 @@ input[type="checkbox"]::before {
 
     .side-bar button {
         width: 10rem;
-        /* margin-top: 11rem !important; */
         margin-right: .3rem !important;
     }
 
     .side-bar p {
         margin-bottom: 0 !important;
-        /* display: block !important; */
     }
 
 
@@ -117,7 +113,6 @@ input[type="checkbox"]::before {
     hr {
         opacity: 0 !important;
         width: 90vw;
-        /* margin-left: -.8rem !important */
     }
 
     h2 {
@@ -171,7 +166,6 @@ input[type="checkbox"]::before {
 
     .tarefas-block table tr {
         width: 5rem !important;
-        /* backgound-color: white !important; */
     }
 }
 

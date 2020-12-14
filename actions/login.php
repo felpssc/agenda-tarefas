@@ -16,10 +16,7 @@
         $_SESSION['usuarioPerfil'] = $profile;
         header('Location: ../page-menu.php');
     } else {
-        
-        // echo '<script>alert("Usuário ou senha incorretos!")</script>';
         header('Location: ../index.php?erro_login=t');
-
     }
 
 

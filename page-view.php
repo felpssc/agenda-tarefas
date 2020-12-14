@@ -20,6 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- <link rel="stylesheet" href="css/animations.css" /> -->
     <link
       rel="stylesheet"
@@ -54,12 +56,19 @@
 
     <script>
       function deleteTask(id) {
-        confirm = confirm('Tem certeza que deseja deletar essa tarefa?');
-        
-        if(confirm){
-          window.location = "actions/deleteTask.php?id=" + id;
-        }
-        
+        confirm = Swal.fire({
+                    title: 'Deseja deletar essa tarefa?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#2ecc71',
+                    cancelButtonColor: '#c5bdbd',
+                    confirmButtonText: 'Sim, deletar!',
+                    cancelButtonText: 'Cancelar'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      window.location = "actions/deleteTask.php?id=" + id;
+                    }
+                  })
       }
 
       function editTask(id){
@@ -79,14 +88,14 @@
       $result = pg_query($connect, $consulta);
 
     ?>
-
+    
     <div class="tarefas-block">
       <table class="bordered striped centered">
         <thead>
           <tr>
-            <th>ID</th>
+            <!-- <th>ID</th> -->
             <th>Tarefa</th>
-            <th>Hora</th>
+            <th>Horário</th>
             <th>Data</th>
             <th>Editar</th>
             <th>Excluir</th>
@@ -101,7 +110,7 @@
 
             while ($linha = pg_fetch_row($result)) {
               echo "<tr>"; 
-              echo "<td>" . $linha[0] . "</td>";
+              // echo "<td>" . $linha[0] . "</td>";
               echo "<td>" . $linha[1] . "</td>";
               echo "<td>" . substr(strval($linha[2]), 0, 5) . "</td>";
               echo "<td>" . data(strval($linha[3])) . "</td>";

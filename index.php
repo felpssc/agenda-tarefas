@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="sortcut icon" href="images/icon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -35,12 +36,6 @@
         
     </div>
     
-    <!-- <h4>Não possui uma conta?</h4>
-    <a href="register.php">criar agora</a> -->
-    
-
-    <h6>Projeto final Dev-web</h6>
-
     <script src="scripts/index.js"></script>
 </body>
 
@@ -56,7 +51,11 @@
     }
 
     if($r == 't'){
-        $s = "<script>alert('Conta criada! Faça login para entrar.')</script>";
+        $s = "<script>Swal.fire(
+            'Conta criada!',
+            'Faça login para entrar.',
+            'success'
+            )</script>";
         echo $s;
     }
 

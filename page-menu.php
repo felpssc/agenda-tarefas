@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/page-menu.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/animations.css" />
-  <link rel="sortcut icon" href="/images/icon.png" />
+  <link rel="sortcut icon" href="images/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <script src="main.js"></script>
 </head>

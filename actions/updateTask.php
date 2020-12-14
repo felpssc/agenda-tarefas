@@ -25,5 +25,6 @@
     pg_query($connect, $r);
 
     header("Location: ../page-view.php");
+    
 
 ?>

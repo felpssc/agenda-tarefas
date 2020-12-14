@@ -42,7 +42,7 @@
   <body>
     <div class="side-bar">
       <div class="box-profile">
-        <img src="<?= $_SESSION['usuarioPerfil'] ?>" id="perfil" />
+        <img src="<?= $_SESSION['usuarioPerfil'] == "images/perfil.svg" ? '../images/perfil.svg' : $_SESSION['usuarioPerfil']  ?>" id="perfil" />
         <p><?= ucfirst($_SESSION['usuarioNome']) ?></p>
       </div>
       <div class="buttons">
@@ -53,7 +53,7 @@
           </button>
         </a>
         
-        <a href="../page-menu.html">
+        <a href="../page-menu.php">
           <button>
             <img src="../images/back.svg" id="back-icon" />
             Menu

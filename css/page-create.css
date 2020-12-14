@@ -154,13 +154,11 @@ span {
 
     .side-bar button {
         width: 9rem;
-        /* margin-top: 11rem !important; */
         margin-right: .3rem !important;
     }
 
     .side-bar p {
         margin-bottom: 0 !important;
-        /* display: block !important; */
     }
 
 
@@ -195,7 +193,6 @@ span {
     hr {
         opacity: 0 !important;
         width: 90vw;
-        /* margin-left: -.8rem !important */
     }
 
     h2 {

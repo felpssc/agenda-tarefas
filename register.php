@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title>Agenda de tarefas | Criar conta</title>
 
     <script>
@@ -62,7 +63,7 @@
 <?php
     $erro = isset($_GET['registration']) ? $_GET['registration'] : 'f' ;
     if($erro == 't'){
-        $c = "<script>alert('Usuário ou já existe!')</script>";
+        $c = "<script>alert('Usuário já existe!')</script>";
         echo $c;
     }
 ?>

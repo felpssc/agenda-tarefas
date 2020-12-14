@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/page-create.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/animations.css" />
-    <link rel="sortcut icon" href="/images/icon.png" />
+    <link rel="sortcut icon" href="images/icon.png" />
     <title>Agenda de tarefas | Criar Tarefa</title>
   </head>
   <body>
@@ -50,7 +50,7 @@
     <h2>Defina sua tarefa</h2>
     <div class="create-tarefa">
       <form method="POST" action="actions/tasks.php">
-        <label for="nome">Nome da tarefa</label>
+        <label for="nome">Nome da tarefa:</label>
         <input type="text" name="nome" placeholder="Descreva sua tarefa" maxlength="50" required>
 
         <label for="hora">Horário:</label>
